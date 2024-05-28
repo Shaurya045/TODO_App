@@ -1,0 +1,21 @@
+{
+  "name": "backend_practice_api",
+  "version": "1.0.0",
+  "description": "backend API Practice",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "Shaurya Pratap Singh",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0"
+  }
+}
