@@ -42,15 +42,16 @@ const Login = () => {
   if (isAuthenticated) return <Navigate to={"/"} />;
 
   return (
-    <div className="login">
+    <div className="login ">
       <section>
-        <form onSubmit={submitHandler}>
+        <form onSubmit={submitHandler} className="bg-blue-100 p-8 rounded-lg shadow-xl">
           <input
             type="email"
             placeholder="Email"
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            className="rounded-xl font-bold"
           />
           <input
             type="password"
@@ -58,8 +59,9 @@ const Login = () => {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            className="rounded-xl font-bold"
           />
-          <button disabled={loading} type="submit">
+          <button disabled={loading} type="submit" className="rounded-xl">
             Login
           </button>
           <h4>Or</h4>

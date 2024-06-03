@@ -88,6 +88,7 @@ const Home = () => {
   if (!isAuthenticated) return <Navigate to={"/login"} />;
 
   return (
+    <>
     <div className="container">
       <div className="login">
         <section>
@@ -128,6 +129,7 @@ const Home = () => {
         ))}
       </section>
     </div>
+    </>
   );
 };
 
